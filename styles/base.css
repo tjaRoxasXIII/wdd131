@@ -16,7 +16,6 @@
 
 body {
     display: grid;
-    grid-template: auto;
     font-family: 'Segoe UI', sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-light);
@@ -36,7 +35,6 @@ header {
 h1 {
     grid-column: 1 / 4;
     font-family: "Bitcount Grid Single", system-ui;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
@@ -84,6 +82,8 @@ main {
     background-color: var(--bg-light);
     padding: 3em;
     height: 300px;
+    border-radius: 1.5rem;
+    margin: 10px;
 
 }
 
