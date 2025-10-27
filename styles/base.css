@@ -24,12 +24,11 @@ body {
 header {
     display: block;
     grid-column: 1 / 4;
+    text-align: center;
     background-color: var(--bg-light);
-    font-size: 1.25rem;
-}
-
-.header {
-    padding: 2rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 h1 {
@@ -45,7 +44,7 @@ h1 {
 }
 
 nav {
-  background-color: var(--bg-darker);
+    background-color: var(--bg-darker);
 }
 
 .navbar {
@@ -53,8 +52,9 @@ nav {
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  padding: 0.5rem 1rem;
   gap: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
 }
 
 .navbar a {
@@ -76,7 +76,16 @@ main {
     text-align: center;
 }
 
+h2 {
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: var(--accent-blue);
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+
+}
 .card {
+    position: relative;
     padding: 1rem;
     gap: 1rem;
     background-color: var(--bg-light);
@@ -84,7 +93,15 @@ main {
     height: 300px;
     border-radius: 1.5rem;
     margin: 10px;
+}
 
+.card img {
+    float: right;
+}
+
+.card p {
+   text-align: left;
+   padding: 0rem 1rem;
 }
 
 footer {
