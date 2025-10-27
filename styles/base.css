@@ -1,0 +1,97 @@
+:root {
+/* Color Variables taken to resemble vscode */
+  --bg-dark: #1e1e1e;
+  --bg-darker: #121212;
+  --bg-light: #2d2d2d;
+  --text-light: #d4d4d4;
+  --accent-blue: #007acc;
+  --accent-hover: #3399ff;
+  --aside-bg: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template: auto;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+header {
+    display: block;
+    grid-column: 1 / 4;
+    background-color: var(--bg-light);
+    font-size: 1.25rem;
+}
+
+.header {
+    padding: 2rem;
+}
+
+h1 {
+    grid-column: 1 / 4;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+}
+
+nav {
+  background-color: var(--bg-darker);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar a:hover {
+  background-color: var(--accent-hover);
+  color: #fff;
+}
+
+main {
+    display: contents;
+    grid-column: 1 /4;
+    text-align: center;
+}
+
+.card {
+    grid-
+    padding: 1rem;
+    gap: 1rem;
+    background-color: var(--bg-light);
+    padding: 3em;
+    height: 300px;
+
+}
+
+footer {
+    grid-column: 1 / 4;
+    background-color: var(--bg-dark);
+    padding: 1rem;
+    text-align: center;
+}
+
