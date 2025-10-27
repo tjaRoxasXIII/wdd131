@@ -79,7 +79,6 @@ main {
 }
 
 .card {
-    grid-
     padding: 1rem;
     gap: 1rem;
     background-color: var(--bg-light);
