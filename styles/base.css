@@ -104,6 +104,17 @@ h2 {
    padding: 0rem 1rem;
 }
 
+.card ul {
+    padding: 2rem;
+
+}
+
+
+.card li, a {
+    padding: .5rem;
+    color: var(--accent-hover);
+}
+
 footer {
     grid-column: 1 / 4;
     background-color: var(--bg-dark);
