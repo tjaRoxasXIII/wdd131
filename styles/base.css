@@ -90,18 +90,19 @@ h2 {
     gap: 1rem;
     background-color: var(--bg-light);
     padding: 3em;
-    height: 300px;
+    min-height: 300px;
     border-radius: 1.5rem;
     margin: 10px;
 }
 
 .card img {
     float: right;
+    padding: .5rem;
 }
 
 .card p {
    text-align: left;
-   padding: 0rem 1rem;
+   padding: 0rem 1.5rem;
 }
 
 .card ul {
