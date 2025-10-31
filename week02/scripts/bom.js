@@ -1,16 +1,31 @@
-const input = document.querySelector('#favchap')
-const button = document.querySelector('button')
-const list = document.querySelector('#list')
+const input = document.querySelector('#favchap');
+const button = document.querySelector('button');
+const list = document.querySelector('#list');
 
-const li = document.createElement('li')
 
-const delButton = document.createElement('button')
 
-li.textContent = input.value
+button.addEventListener('click', function() {
+    let li = document.createElement('li');
+    let delButton = document.createElement('button');
 
-delButton.textContent = '❌'
+    if (input.value.trim() == '') {
+        alert("Please enter text prior to adding your chapter!")
+        input.focus()
+    }
+    else {
 
-li.append(delButton)
+        li.textContent = input.value;
+        delButton.textContent = '❌';
 
-list.append(li)
+        li.append(delButton);
+        list.append(li);
+        input.value = '';
+    }
+
+   delButton.addEventListener('click', function() {
+        list.removeChild(li);
+        input.focus();
+    })
+});
+
 
