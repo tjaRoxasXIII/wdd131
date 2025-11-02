@@ -19,11 +19,9 @@ h2 {
     margin: 1rem 0;
 }
 
-nav {
+nav ul{
+    color: var(--text-light);
     background-color: var(--bg-darker);
-}
-
-.navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -31,17 +29,19 @@ nav {
     gap: 1rem;
     padding: 0.5rem 1rem;
     margin-top: 1rem;
+
 }
 
-.navbar a {
-    color: var(--accent-blue);
+
+nav a {
+    color: var(--accent-hover);
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background-color 0.2s ease;
 }
 
-.navbar a:hover {
+nav a:hover {
     background-color: var(--accent-hover);
     color: #fff;
 }
