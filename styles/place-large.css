@@ -6,7 +6,7 @@
   picture img {
   display: block;
   width: 100vw;
-  height: calc(100vw * 9 / 16);
+  height: calc(70vw * 9 / 16);
   object-fit: cover;
 }
 
