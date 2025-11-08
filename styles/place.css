@@ -27,7 +27,6 @@ header {
 
 section {
     text-align: center;
-    padding: 1rem;
     margin: 1rem;
     padding: 1rem;
     background-color: var(--section-bg); 
@@ -55,17 +54,17 @@ footer {
     color: var(--text-light);
 }
 
-.emoji {
-  display: inline-block;
-}
-@media (max-width: 500px) {
-  .emoji {
-    display: none;
-  }
-}
-
 .icon img {
     width: 50%;
     height: auto;
+    display: none;
+    justify-self: center;
 }
+
+@media (max-width: 500px) {
+    .icon img {
+        display: block;
+    }
+}
+
 
