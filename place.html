@@ -36,7 +36,11 @@
         </section>
         <section class="weather">
             <h3>Weather</h3>
-            <img src="images/weather-icon.svg" alt="weather icon of the sun behind a cloud" width="100">
+            <picture class="icon">
+                <source srcset="images/weather-icon.svg" media="(max-width: 500px)">
+                <img aria-hidden="true">
+                <span class="emoji" aria-label="weather icon" style="font-size: 2rem">⛅</span>
+            </picture>
             <ul>
                 <li>Temperature: 16  &deg;C</li>
                 <li>Conditions: Cloudy</li>

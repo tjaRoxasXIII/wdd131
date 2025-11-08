@@ -1,0 +1,43 @@
+@media (min-width: 500px) {
+  main {
+    position: relative;
+  }
+
+  picture img {
+  display: block;
+  width: 100vw;
+  height: calc(100vw * 9 / 16);
+  object-fit: cover;
+}
+
+
+ .data,
+ .weather {
+    position: absolute;
+    width: 30%;
+    max-width: 60%;
+    padding: 1rem;
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .data h3,
+ .weather h3{
+    font-size: 2rem;
+    width: 59%;
+    background-color: rgb(216, 201, 81);
+    text-align: center;
+    padding: 1rem;
+    margin: -.5rem -1rem 1rem -2rem;
+    border-radius: 10px;;
+ }
+  .data {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .weather {
+    bottom: 5rem;
+    right: 1rem;
+  }
+}

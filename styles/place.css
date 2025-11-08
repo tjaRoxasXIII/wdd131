@@ -1,10 +1,9 @@
 :root {
-/* Color Variables taken to resemble vscode */
-  --bg-dark: #393838;
+  --bg-dark: #332a2a;
   --bg-darker: #121212;
   --text-light: #d4d4d4;
   --accent-red: #d52a17;
-  --section-bg: #ffffff;
+  --section-bg: #959595;
 }
 
 * {
@@ -14,18 +13,29 @@
 
 body {
     display: grid;
-    font-family: 'Segoe UI', sans-serif;  
+    font-family: 'Segoe UI', sans-serif;
+    
 }
 
 header {
     padding: 1rem;
     text-align: center;
     font-size: larger;
+    background-color: var(--accent-red);
+    color: var(--text-light);
 }
 
 section {
     text-align: center;
     padding: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--section-bg); 
+}
+
+section h3 {
+    font-size: 2rem;
+    padding: 1rem;;
 }
 
 ul {
@@ -41,4 +51,21 @@ picture img {
 footer {
     text-align: center;
     padding: 1rem;
+    background-color: var(--bg-darker);
+    color: var(--text-light);
 }
+
+.emoji {
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  .emoji {
+    display: none;
+  }
+}
+
+.icon img {
+    width: 50%;
+    height: auto;
+}
+
