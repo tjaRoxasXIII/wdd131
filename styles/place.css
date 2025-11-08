@@ -1,0 +1,44 @@
+:root {
+/* Color Variables taken to resemble vscode */
+  --bg-dark: #393838;
+  --bg-darker: #121212;
+  --text-light: #d4d4d4;
+  --accent-red: #d52a17;
+  --section-bg: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    font-family: 'Segoe UI', sans-serif;  
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+    font-size: larger;
+}
+
+section {
+    text-align: center;
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
