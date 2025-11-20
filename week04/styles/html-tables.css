@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+table {
+    gap: 0;
+    margin: 0;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+caption {
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+th {
+    margin: 0;
+    background-color: gray;
+    color: white;
+    padding: 1rem;
+    
+}
+
+th.blank {
+    background-color: black;
+}
+
+td {
+    border: 1px solid lightgray;
+    padding: 1rem;
+    text-align: center;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(237, 232, 232);
+}
+
+tfoot td {
+    font-size: 0.7rem;
+    border: none;
+}
