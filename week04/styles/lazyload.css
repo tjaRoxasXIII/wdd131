@@ -1,0 +1,25 @@
+h1, footer {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    padding: 1rem;
+    justify-items: center;
+}
+
+img {
+    display: block;
+    animation: fade 15s;
+    padding: 1rem;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
