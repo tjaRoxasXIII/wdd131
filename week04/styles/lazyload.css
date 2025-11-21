@@ -12,6 +12,7 @@ img {
     display: block;
     animation: fade 15s;
     padding: 1rem;
+    background: black;
 }
 
 @keyframes fade {
