@@ -1,0 +1,120 @@
+:root {
+/* Color Variables taken to resemble vscode */
+  --bg-dark: #1e1e1e;
+  --bg-darker: #121212;
+  --bg-light: #2d2d2d;
+  --text-light: #d4d4d4;
+  --accent-blue: #007acc;
+  --accent-hover: #3399ff;
+  --aside-bg: #ffffff;
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    color: var(--text-light);
+    background-color: var(--bg-darker);
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+
+nav a {
+    color: var(--accent-hover);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-hover);
+    color: #fff;
+}
+
+#menu {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--accent-hover);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+
+main {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer {
+    color: var(--text-light);
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--bg-light);
+}
+
+.temple-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.temple-card {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  overflow: hidden;
+  width: 250px;
+  height: 400px;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.temple-card h3 {
+  font-size: 1.4rem;
+  margin: 0.75rem 1rem;
+  color: var(--accent-hover);
+}
+
+.temple-card p {
+  margin: 0.5rem 1rem;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.temple-card p:last-of-type {
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #aaa;
+}

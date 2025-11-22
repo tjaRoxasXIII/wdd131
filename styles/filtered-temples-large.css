@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+  #menu {
+    display: block;
+  }
+
+  ul.navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  ul.navbar.show {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  section {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  h1 {
+    grid-column: 1/ -1;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  ul.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
