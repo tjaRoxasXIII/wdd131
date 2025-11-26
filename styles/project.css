@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #171a21;   /* Dark Gray */
+    --accent-color-dark-bg: #1B9AAA;    /* Steam Blue */
+    --accent-color-light-bg: #045c82; /* Light Blue */
+    --secondary-color: #e6e1e1; /* Light Gray */
+    --nav-bg-color: #1b2838;
+
+    --heading-font: 'Roboto Condensed', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --accent-font: 'Orbitron', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+
+}
+
+main {
+    padding: 3rem;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--accent-color-dark-bg);
+    padding: 1rem;
+}
+
+h2, h3 {
+
+    font-family: var(--heading-font);
+    color: var(--accent-color-light-bg);
+    background: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 1rem;;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--accent-font);
+}
+
+ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 1rem;
+    background-color: var(--nav-bg-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
