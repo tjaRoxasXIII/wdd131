@@ -1,0 +1,15 @@
+fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="radio"],
+select {
+    display: block;
+    width:auto;
+    max-width: 400px;
+}

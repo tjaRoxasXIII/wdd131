@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Week 05 Product Review Form Assignment Page">
+    <meta name="author" content="Taylor Allen">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <title>Product Review</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form method="get" action="review.html" class="review"></form>
+        <fieldset>
+            <legend>Product Review</legend>
+            <label>Product Name*
+                <select name="pname" required>
+                    <option value="" selected disabled>Please Select </option>
+                </select>
+            </label>
+            <label>Overall Rating*<input type="text" name="rating" required></label>
+            <label>Date of Installation<input type="date" name="instdate" placeholder="1235551234"></label>
+            <div>Which features did you find useful in the product? (Check all that apply)</div>
+                <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" value="yes">Design</label>
+            <label>Written Review (optional)<input type="text" name="review"></label>
+            <label>Your Name (optional)<input type="text" name="uname"></label>
+        </fieldset>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
