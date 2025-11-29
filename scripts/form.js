@@ -25,3 +25,26 @@ const products = [
     averagerating: 5.0
   }
 ];
+
+const select = document.getElementById("pname");
+
+products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.name;
+    option.textContent = product.name;
+    select.appendChild(option);
+});
+
+let count = localStorage.getItem("reviewCount");
+    if (!count) {
+      count = 0;
+    }
+
+    count = parseInt(count) + 1;
+
+    localStorage.setItem("reviewCount", count);
+
+    // Display the count on the page
+    document.getElementById("reviewCounter").textContent =
+      "You have completed " + count + " review" + (count === 1 ? "" : "s") + ".";
+
