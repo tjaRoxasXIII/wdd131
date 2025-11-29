@@ -28,7 +28,7 @@ fieldset {
 input[type="text"],
 input[type="date"],
 input[type="radio"],
-input[type="textarea"],
+textarea,
 select {
     display: block;
     width:auto;
@@ -93,11 +93,6 @@ input[type="radio"] {
 .stars > label::before {
 	content: "\2606";
 }
-
-.stars input:checked ~ label::before {
-	content: "\2605";
-}
-
 
 .stars input:checked ~ label::before {
 	content: "\2605";

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Week 05 Product Review Form Assignment Page">
+    <meta name="description" content="The Week 05 Product Review Form Assignment Page which allows form submissions and runs javascript to track submission counts">
     <meta name="author" content="Taylor Allen">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
@@ -20,7 +20,7 @@
         <fieldset>
             <label>Product Name*
                 <select name="pname" id="pname" required>
-                    <option value="" disabled selected>Please Select </option>
+                    <option value="" disabled selected>Select a Product ...</option>
                 </select>
             </label>
             <label>Overall Rating*</label>
@@ -40,7 +40,7 @@
                 <label><input type="checkbox" name="performance" value="yes">Performance</label>
                 <label><input type="checkbox" name="design" value="yes">Design</label>
             </div>
-            <label>Written Review (optional)<input type="textarea" id="review" name="review"></label>
+            <label>Written Review (optional)<textarea id="review" name="review"></textarea></label>
             <label>Your Name (optional)<input type="text" id="uname" name="uname"></label>
 
             <input type="submit" value="Post Review">
