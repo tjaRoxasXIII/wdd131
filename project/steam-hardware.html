@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan for Steam Hardware Hub final project">
+    <meta name="author" content="Taylor Allen">
+    <title>Steam Hardware Hub - Site Plan</title>
+    <link rel="stylesheet" href="../styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="./scripts/carousel.js" defer></script>    
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Steam Hardware Hub</h1>
+    </header>
+    <nav>
+        <a href="steam-hardware.html">Home</a> |
+        <a href="deck.html">Steam Deck</a> |
+        <a href="machine.html">Steam Machine</a> |
+        <a href="frame.html">Steam Frame</a>
+    </nav>
+    <main>
+    
+        <section id="announcement">
+            <h2>Linux Gaming Is Finally Here</h2>
+            <p>The site provides specifications, pricing, and store links for Valve’s Steam hardware devices.</p>
+        </section>
+    
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="carousel">
+                <img src="images/deck-front.png" alt="Steam Frame VR headset" width="800" class="active">
+                <img src="images/steam-deck.png" alt="Steam Deck handheld console" width="800">
+                <img src="images/steam-family.avif" alt="Steam Machine living room console" width="800">
+                <img src="images/steam-frame.avif" alt="Steam Frame VR headset" width="800">
+
+                <button id="prev">&#10094;</button>
+                <button id="next">&#10095;</button>
+            </div>
+
+        </section>
+    
+        <section id="compare">
+            <h2>Compare Devices</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Steam Deck<img src="images/deck-icon.avif"></th>
+                        <th>Steam Machine<img src="images/machine-icon.avif"></th>
+                        <th>Steam Frame<img src="images/frame-icon.avif"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Release Year</td>
+                        <td>2022</td>
+                        <td>2026</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>Primary Use</td>
+                        <td>Handheld Gaming PC</td>
+                        <td>Living Room Gaming PC</td>
+                        <td>Wired VR / Virtual Display Gaming</td>
+                    </tr>
+                    <tr>
+                        <td>Operating System</td>
+                        <td>SteamOS 3.0 (Linux)</td>
+                        <td>SteamOS (Linux)</td>
+                        <td>SteamOS (Linux)</td>
+                    </tr>
+                    <tr>
+                        <td>Price Range</td>
+                        <td>$399 - $649</td>
+                        <td>TBA ~ $699</td>
+                        <td>TBA ~ $899</td>
+                    </tr>
+            </table>
+        </section>
+    
+        <fieldset id="interest">
+            <legend>Send us your thoughts</legend>
+            <label for="devices">Which Steam hardware are you interested in?</label>
+                <label for="steam-frame">
+                    <input type="checkbox" id="steam-frame" name="steam frame" value="steam frame">Steam Frame</input>
+                </label>
+                <label for="steam-machine">
+                    <input type="checkbox" id="steam-machine" name="steam machine" value="steam machine">Steam Machine</input>
+                </label>
+                <label for="steam-deck">
+                    <input type="checkbox" id="steam-deck" name="steam deck" value="steam deck">Steam Deck</input>
+                </label>
+                <label for="legacy">
+                    <input type="checkbox" id="legacy" name="legacy hardware" value="other">Older offerings</input>
+                </label>
+            <label for="suggestions">What additional hardware would you like to see next?</label>
+                <textarea id="suggestions" name="suggestions" rows="4" cols="50" placeholder="Your suggestions here..."></textarea>
+            <label for="email">Get Up-to-date notifications:</label>
+                <input type="email" id="email" name="email" placeholder="(Optional) Email Address">
+            <input type="submit" value="Post Feedback">
+            
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Taylor Allen - Florida</p>
+        <p id="lastModified"></p>
+        <a href="references.html">References</a>
+    </footer>
+</body>
+</html>
