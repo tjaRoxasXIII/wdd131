@@ -19,7 +19,7 @@
 body {
     font-family: var(--body-font);
     color: var(--font-light);
-    background: rgb(73, 71, 71)
+    background: linear-gradient( #3d3c3c, #1e1e1e);
 
 }
 
@@ -65,6 +65,11 @@ ul {
     list-style-type: none;
 }
 
+.navbar {
+  position: relative;
+  z-index: 1000;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -86,7 +91,12 @@ nav a:hover {
     border-radius: 0.5rem;
     transition: background-color 0.4s;
 }
-
+#announcement img {
+    margin: 0 0 1rem 1rem;
+    max-width: 60%;
+    height: fit-content;
+    border-radius: 12px;
+}
 #menu {
     display: none;
     font-size: 1.5rem;
@@ -168,7 +178,7 @@ footer {
   margin: 2rem auto;
 }
 
-#compare table {
+ table {
   margin: 0 auto;           
   border-collapse: collapse;
   background: var(--nav-bg-color);
@@ -177,14 +187,14 @@ footer {
   font-family: inherit;
 }
 
-#compare th,
-#compare td {
+ th,
+ td {
   border: 1px solid #f2f2f2;   
   padding: 0.75rem .25rem;
   text-align: center;
 }
 
-#compare thead th {
+thead th {
   background-color: var(--primary-color); 
   font-weight: bold;
 }
@@ -193,6 +203,13 @@ footer {
   display: block;
   margin: 0.25rem auto 0;   /* center icons under text */
   height: 24px;             /* consistent icon size */
+}
+
+#features img {
+    max-width: 100%;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 1rem;
 }
 
 label {
@@ -205,7 +222,7 @@ label {
 input[type="email"],
 input[type="checkbox"],
 textarea{
-    max-width: 200px;
+    max-width: 300px;
     padding: 0.5rem;
     margin-left: 1rem;
     margin-bottom: 1rem;

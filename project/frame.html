@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Steam Frame specifications and features breakdown for Valve’s VR/virtual display hardware.">
+  <meta name="author" content="Taylor Allen">
+  <title>Steam Frame - Steam Hardware Hub</title>
+  <link rel="stylesheet" href="../styles/project.css">
+  <link rel="stylesheet" href="styles/project-scaling.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="./scripts/menu.js" defer></script> 
+  <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Steam Hardware Hub</h1>
+  </header>
+  <button id="menu" class="open">☰</button>
+  <nav class="navbar" id="navbar">
+    <a href="steam-hardware.html">Home</a>
+    <a href="deck.html">Steam Deck</a>
+    <a href="machine.html">Steam Machine</a>
+    <a href="frame.html">Steam Frame</a>
+  </nav>
+  <main>
+    <section id="announcement">
+      <h2>Steam Frame Overview</h2>
+      <img src="images/frame-headset-diagram.avif" alt="Steam Frame VR headset diagram outline" width="700">
+      <p>The Steam Frame is Valve’s wired VR and standalone virtual display hardware, designed to deliver immersive gaming experiences powered by SteamOS.</p>
+    </section>
+
+    <section id="specs">
+      <h2>Specifications</h2>
+      <table>
+        <thead>
+          <tr><th>Category</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Display</td><td>High-resolution dual OLED panels</td></tr>
+          <tr><td>Refresh Rate</td><td>90–120 Hz</td></tr>
+          <tr><td>Field of View</td><td>~110 degrees</td></tr>
+          <tr><td>Tracking</td><td>External sensors with wired connection</td></tr>
+          <tr><td>Connectivity</td><td>USB-C, HDMI, wired VR link</td></tr>
+          <tr><td>Operating System</td><td>SteamOS (Linux-based)</td></tr>
+          <tr><td>Compatibility</td><td>Works with SteamVR titles and can even run your standalone library titles</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="features">
+      <h2>Key Features</h2>
+      <img src="images/steam-frame-and-controllers.png" alt="Steam Frame headset and controllers on a table" width="400">
+      <ul>
+        <li>Immersive VR gaming with SteamVR support.</li>
+        <li>High refresh rate and wide field of view.</li>
+        <li>Wired connection for low latency and stable performance.</li>
+        <li>Compatible with SteamOS and Proton for cross-platform play.</li>
+        <li>Supports virtual desktop mode for productivity and media.</li>
+      </ul>
+    </section>
+
+    <section id="purchase">
+      <h2>Buy Now/Reserve</h2>
+      <ul class="buy-links" id="buy-links">
+        <li><a href="https://store.steampowered.com/sale/steamframe">Steam Frame Store Page</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> - Taylor Allen - Florida</p>
+    <p id="lastModified"></p>
+    <a href="references.html">References</a>
+  </footer>
+</body>
+</html>

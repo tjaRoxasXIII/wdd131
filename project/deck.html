@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Steam Deck specifications and features breakdown for Valve’s handheld gaming PC.">
+    <meta name="author" content="Taylor Allen">
+    <title>Steam Deck - Steam Hardware Hub</title>
+    <link rel="stylesheet" href="../styles/project.css">
+    <link rel="stylesheet" href="styles/project-scaling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="./scripts/menu.js" defer></script>   
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Steam Hardware Hub</h1>
+    </header>
+    <button id="menu" class="open">☰</button>
+    <nav class="navbar" id="navbar">
+        <a href="steam-hardware.html">Home</a>
+        <a href="deck.html">Steam Deck</a>
+        <a href="machine.html">Steam Machine</a>
+        <a href="frame.html">Steam Frame</a>
+    </nav>
+    <main>
+        <section id="announcement">
+            <h2>Steam Deck Overview</h2>
+            <img src="images/deck-dark.jpg" alt="Steam Deck handheld console" width="700">
+            <p>The Steam Deck is Valve’s handheld gaming PC, designed to bring your entire Steam library into a portable form factor while running SteamOS (Linux).</p>
+        </section>
+        
+        <section id="specs">
+            <h2>Specifications</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Processor</td>
+                        <td>Custom AMD APU: Zen 2 CPU (4 cores, 8 threads) + RDNA 2 GPU</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>16 GB LPDDR5</td>
+                    </tr>
+                    <tr>
+                        <td>Storage Options</td>
+                        <td>64 GB eMMC, 256 GB NVMe SSD, 512 GB NVMe SSD</td>
+                    </tr>
+                    <tr>
+                        <td>Display</td>
+                        <td>7-inch LCD touchscreen, 1280x800 resolution, 16:10 aspect ratio</td>
+                    </tr>
+                    <tr>
+                        <td>Battery Life</td>
+                        <td>2–8 hours depending on workload</td>
+                    </tr>
+                    <tr>
+                        <td>Operating System</td>
+                        <td>SteamOS 3.0 (Linux-based)</td>
+                    </tr>
+                    <tr>
+                        <td>Connectivity</td>
+                        <td>Wi-Fi, Bluetooth 5.0, USB-C with DisplayPort 1.4 support</td>
+                    </tr>
+                    <tr>
+                        <td>Dock Support</td>
+                        <td>Optional Steam Deck Dock for HDMI, Ethernet, and USB peripherals</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="features">
+            <h2>Key Features</h2>
+            <img src="images/deck-for-travel.jpg" alt="Steam Deck handheld inside a case beside a backpack" width="400">
+            <ul>
+                <li>Access to your full Steam library on the go.</li>
+                <li>Runs Linux-based SteamOS with Proton compatibility for Windows games.</li>
+                <li>Expandable storage via microSD card slot.</li>
+                <li>Custom controls: thumbsticks, trackpads, touchscreen, and gyro.</li>
+                <li>Docking capability for big-screen play with peripherals.</li>
+            </ul>
+        </section>
+
+        <section id="purchase">
+            <h2>Buy Now/Reserve</h2>
+            <ul class="buy-links" id="buy-links">
+                <li><a href="https://store.steampowered.com/steamdeck">Steam Deck Store Page</a></li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Taylor Allen - Florida</p>
+        <p id="lastModified"></p>
+        <a href="references.html">References</a>
+    </footer>
+</body>
+</html>

@@ -114,4 +114,22 @@
         text-align: center;
     }
 
+    #features{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+        margin: 0 1rem;
+    }
+
+    #features h2 {
+        grid-column: span 2;
+    }
+
+    #features img, #features ul {
+        max-width: 90%;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+
 }

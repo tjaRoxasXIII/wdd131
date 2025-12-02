@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Steam Machine specifications and features breakdown for Valve’s living room gaming PC.">
+  <meta name="author" content="Taylor Allen">
+  <title>Steam Machine - Steam Hardware Hub</title>
+  <link rel="stylesheet" href="../styles/project.css">
+  <link rel="stylesheet" href="styles/project-scaling.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="./scripts/menu.js" defer></script> 
+  <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Steam Hardware Hub</h1>
+  </header>
+  <button id="menu" class="open">☰</button>
+  <nav class="navbar" id="navbar">
+    <a href="steam-hardware.html">Home</a>
+    <a href="deck.html">Steam Deck</a>
+    <a href="machine.html">Steam Machine</a>
+    <a href="frame.html">Steam Frame</a>
+  </nav>
+  <main>
+    <section id="announcement">
+      <h2>Steam Machine Overview</h2>
+      <img src="images/steam-machine-diagram.avif" alt="Steam Machine outline diagram" width="700">
+      <p>The Steam Machine is Valve’s living room gaming PC, designed to bring the power of SteamOS into a console-style form factor for couch gaming.</p>
+    </section>
+
+    <section id="specs">
+      <h2>Specifications</h2>
+      <table>
+        <thead>
+          <tr><th>Category</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Processor</td><td>Custom x86 CPU options (Intel/AMD depending on model)</td></tr>
+          <tr><td>GPU</td><td>Discrete NVIDIA/AMD graphics depending on configuration</td></tr>
+          <tr><td>RAM</td><td>8–16 GB DDR4</td></tr>
+          <tr><td>Storage Options</td><td>500 GB – 2 TB HDD/SSD</td></tr>
+          <tr><td>Operating System</td><td>SteamOS (Linux-based)</td></tr>
+          <tr><td>Connectivity</td><td>Wi-Fi, Ethernet, HDMI, USB ports</td></tr>
+          <tr><td>Form Factor</td><td>Console-style case for living room setup</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="features">
+      <h2>Key Features</h2>
+      <img src="images/steam-machine.avif" alt="Steam Machine and controller on a table" width="400">
+      <ul>
+        <li>Console-style design for living room gaming.</li>
+        <li>Runs SteamOS with access to the full Steam library.</li>
+        <li>Supports controllers, keyboards, and mice.</li>
+        <li>Upgradeable hardware depending on manufacturer.</li>
+        <li>Optimized for big-screen play.</li>
+      </ul>
+    </section>
+
+    <section id="purchase">
+      <h2>Buy Now/Reserve</h2>
+      <ul class="buy-links" id="buy-links">
+        <li><a href="https://store.steampowered.com/sale/steammachine">Steam Machine Store Page</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> - Taylor Allen - Florida</p>
+    <p id="lastModified"></p>
+    <a href="references.html">References</a>
+  </footer>
+</body>
+</html>
