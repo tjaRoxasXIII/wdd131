@@ -24,8 +24,7 @@ body {
 }
 
 main {
-    padding: 3rem;
-}
+padding: 1rem 0;}
 
 h1 {
     font-family: var(--heading-font);
@@ -70,7 +69,6 @@ nav {
     display: flex;
     justify-content: center;
     color: white;
-    gap: 1rem;
     background-color: var(--nav-bg-color);
     font-size: 1.5rem;
 }
@@ -89,6 +87,36 @@ nav a:hover {
     transition: background-color 0.4s;
 }
 
+#menu {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--accent-hover);
+    background-color: var(--nav-bg-color);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+#buy-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+#buy-links li, #buy-links a {
+    justify-content: center;
+    width: fit-content;
+    padding: 0 .5rem;
+    font-size: 1.75rem;
+    text-decoration: none;
+    border-radius: 6px;
+    color: white;
+}
+
+#buy-links li {
+    background: linear-gradient(green, darkgreen);
+}
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -99,8 +127,8 @@ footer {
 
 .carousel {
   position: relative;
-  width: 600px;      /* fixed width */
-  height: 400px;     /* fixed height */
+  width: 300px;      /* fixed width */
+  height: 200px;     /* fixed height */
   margin: 1rem auto;
   overflow: hidden;
   border-radius: 6px;
@@ -127,12 +155,12 @@ footer {
   color: white;
   border: none;
   font-size: 1.5rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem .5rem;
   cursor: pointer;
 }
 
-#prev { left: 10px; }
-#next { right: 10px; }
+#prev { left: 2px; }
+#next { right: 2px; }
 
 /* Comparison Table Styles */
 #compare {
@@ -144,15 +172,15 @@ footer {
   margin: 0 auto;           
   border-collapse: collapse;
   background: var(--nav-bg-color);
-  width: 80%;
-  max-width: 900px;
+  width: 40%;
+  max-width: 400px;
   font-family: inherit;
 }
 
 #compare th,
 #compare td {
   border: 1px solid #f2f2f2;   
-  padding: 0.75rem 1rem;
+  padding: 0.75rem .25rem;
   text-align: center;
 }
 
@@ -177,7 +205,7 @@ label {
 input[type="email"],
 input[type="checkbox"],
 textarea{
-    max-width: 400px;
+    max-width: 200px;
     padding: 0.5rem;
     margin-left: 1rem;
     margin-bottom: 1rem;

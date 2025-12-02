@@ -7,20 +7,22 @@
     <meta name="author" content="Taylor Allen">
     <title>Steam Hardware Hub</title>
     <link rel="stylesheet" href="../styles/project.css">
+    <link rel="stylesheet" href="styles/project-scaling.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@300&family=Nunito&family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="./scripts/carousel.js" defer></script>    
+    <script src="./scripts/project.js" defer></script>    
     <script src="../scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Steam Hardware Hub</h1>
     </header>
-    <nav>
+    <button id="menu" class="open">☰</button>
+    <nav class="navbar" id="navbar">
         <a href="steam-hardware.html">Home</a> |
         <a href="deck.html">Steam Deck</a> |
         <a href="machine.html">Steam Machine</a> |
@@ -86,6 +88,14 @@
             </table>
         </section>
     
+        <section id="purchase">
+            <h2>Buy Now/Reserve</h2>
+            <ul class="buy-links" id="buy-links">
+                <li><a href="https://store.steampowered.com/steamdeck">Steam Deck</a></li>
+                <li><a href="https://store.steampowered.com/sale/steammachine">Steam Machine</a></li>
+                <li><a href="https://store.steampowered.com/sale/steamframe">Steam Frame</a></li>
+            </ul>
+            </section>
         <fieldset id="interest">
             <legend>Send us your thoughts</legend>
             <label for="devices">Which Steam hardware are you interested in?</label>

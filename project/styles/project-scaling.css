@@ -1,0 +1,117 @@
+@media screen and (max-width: 768px) {
+    #menu {
+        display: block;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #menu {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main {
+     padding: 3rem;
+    }
+
+    h1 {
+        font-family: var(--heading-font);
+        color: var(--accent-color-dark-bg);
+        padding: 1rem;
+        font-size: 2.5rem;
+    }
+
+    h2, h3 {
+
+        font-family: var(--heading-font);
+        color: var(--accent-color-light-bg);
+        background: var(--secondary-color);
+        margin-bottom: 1rem;
+        text-align: center;
+        border-radius: 1rem;
+        font-size: 2rem;
+    }
+
+    section {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    header {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 1rem;
+        text-align: center;
+        font-family: var(--accent-font);
+    }
+
+    ul {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        list-style-type: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        color: white;
+        gap: 1rem;
+        background-color: var(--nav-bg-color);
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+    }
+
+    .carousel {
+        position: relative;
+        width: 600px;      /* fixed width */
+        height: 400px;     /* fixed height */
+        margin: 1rem auto;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+
+    #compare table {
+        margin: 0 auto;           
+        border-collapse: collapse;
+        background: var(--nav-bg-color);
+        width: 80%;
+        max-width: 800px;
+        font-family: inherit;
+    }
+
+    #compare th,
+    #compare td {
+        border: 1px solid #f2f2f2;   
+        padding: 1rem .5rem;
+        text-align: center;
+    }
+
+}
